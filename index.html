@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مشاوي الأصيل | فخامة الشواء على الفحم الطبيعي</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'amber': '#F59E0B',
+            'gold': '#EAB308',
+            'charcoal': '#121214',
+            'charcoal-light': '#1C1C21',
+            'ember': '#EA580C',
+            'light-primary': '#C2410C',
+            'light-on-primary': '#FFFFFF',
+            'light-surface': '#FAFAF9',
+            'light-on-surface': '#1C1917',
+            'light-surface-container': '#F5F5F4',
+            'light-on-surface-container': '#292524',
+            'dark-primary': '#FB923C',
+            'dark-on-primary': '#431407',
+            'dark-surface': '#0D0D10',
+            'dark-on-surface': '#F5F5F4',
+            'dark-surface-container': '#18181D',
+            'dark-on-surface-container': '#E7E5E4',
+          },
+          borderRadius: {
+            'sm': '6px',
+            'DEFAULT': '12px',
+            'md': '16px',
+            'lg': '20px',
+            'xl': '28px',
+            'full': '9999px',
+          },
+          fontFamily: {
+            'display': ['"Cairo"', 'sans-serif'],
+            'headline': ['"Cairo"', 'sans-serif'],
+            'body': ['"Cairo"', 'sans-serif'],
+            'label': ['"Cairo"', 'sans-serif'],
+          },
+          fontSize: {
+            'display-lg': ['48px', { lineHeight: '56px', letterSpacing: '-0.5px', fontWeight: '800' }],
+            'display-lg-mobile': ['32px', { lineHeight: '40px', letterSpacing: '-0.25px', fontWeight: '800' }],
+            'headline-xl': ['36px', { lineHeight: '44px', letterSpacing: '-0.25px', fontWeight: '700' }],
+            'headline-xl-mobile': ['28px', { lineHeight: '36px', letterSpacing: '0px', fontWeight: '700' }],
+            'headline-lg': ['28px', { lineHeight: '36px', letterSpacing: '0px', fontWeight: '700' }],
+            'headline-lg-mobile': ['22px', { lineHeight: '30px', letterSpacing: '0px', fontWeight: '700' }],
+            'headline-md': ['20px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '600' }],
+            'body-lg': ['18px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '400' }],
+            'body-md': ['15px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+            'body-sm': ['13px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '400' }],
+            'label-lg': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '600' }],
+            'label-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '600' }],
+            'label-sm': ['12px', { lineHeight: '16px', letterSpacing: '0px', fontWeight: '500' }],
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Google Fonts: Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Material Symbols Outlined -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  
+  <!-- Custom Linked Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-charcoal text-dark-on-surface font-body min-h-screen selection:bg-amber selection:text-charcoal flex flex-col">
+
+  <!-- ================= TOP NOTIFICATION / PROMO BAR ================= -->
+  <aside class="bg-gradient-to-r from-ember via-amber to-ember text-charcoal py-2 px-4 text-center font-label text-label-sm font-bold flex items-center justify-center gap-2">
+    <span class="material-symbols-outlined text-[18px]">local_fire_department</span>
+    <span>توصيل مجاني على الطلبات العائلية والمشويات بالكيلو لفترة محدودة! كود: ASEEL2026</span>
+  </aside>
+
+  <!-- ================= HEADER / NAVIGATION ================= -->
+  <header class="sticky top-0 z-40 bg-charcoal/95 backdrop-blur-md border-b border-white/10 transition-all duration-150">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-ember to-amber flex items-center justify-center shadow-lg shadow-ember/30 text-charcoal group-hover:scale-105 transition-transform">
+          <span class="material-symbols-outlined text-[28px] font-bold">outdoor_grill</span>
+        </div>
+        <div>
+          <span class="font-headline text-headline-lg font-black tracking-tight text-white flex items-center gap-1.5">
+            مشاوي <span class="text-amber">الأصيل</span>
+          </span>
+          <span class="block text-gold text-label-sm -mt-1 font-medium tracking-wide">
+            فخامة الشواء على الفحم الطبيعي
+          </span>
+        </div>
+      </a>
+
+      <!-- Quick Nav Links -->
+      <nav class="hidden md:flex items-center gap-8 font-label text-label-md">
+        <a href="#hero" class="text-amber hover:text-white transition-colors font-bold">الرئيسية</a>
+        <a href="#menu-section" class="text-dark-on-surface-container hover:text-amber transition-colors">قائمة الطعام</a>
+        <a href="#about-grill" class="text-dark-on-surface-container hover:text-amber transition-colors">سر الأصيل</a>
+        <a href="#footer" class="text-dark-on-surface-container hover:text-amber transition-colors">الفروع والتواصل</a>
+      </nav>
+
+      <!-- Header Actions: Cart & CTA -->
+      <div class="flex items-center gap-3">
+        <!-- Floating Cart trigger button -->
+        <button 
+          id="cart-btn" 
+          type="button" 
+          onclick="openCartDrawer()" 
+          aria-label="سلة المشتريات" 
+          class="relative p-2.5 rounded-full bg-charcoal-light border border-white/10 text-white hover:border-amber/40 hover:text-amber transition-all flex items-center justify-center cursor-pointer"
+        >
+          <span class="material-symbols-outlined text-[22px]">shopping_cart</span>
+          <span 
+            id="cart-counter" 
+            class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-ember text-white text-[11px] font-bold flex items-center justify-center tabular-nums transition-transform"
+          >
+            0
+          </span>
+        </button>
+
+        <!-- Order Now CTA (opens cart) -->
+        <button 
+          type="button" 
+          onclick="openCartDrawer()" 
+          class="inline-flex items-center gap-2 px-5 py-2.5 rounded-DEFAULT bg-gradient-to-r from-ember to-amber text-charcoal font-headline font-bold text-label-md shadow-lg shadow-ember/20 hover:brightness-110 active:scale-95 transition-all cursor-pointer"
+        >
+          <span class="material-symbols-outlined text-[18px]">restaurant_menu</span>
+          <span>طلب الآن</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="flex-1">
+
+    <!-- ================= 1. HERO SECTION ================= -->
+    <section id="hero" class="relative overflow-hidden bg-charcoal-light py-12 lg:py-20 border-b border-white/5">
+      <!-- Glow ambience effects -->
+      <div class="absolute top-1/4 -right-48 w-96 h-96 bg-ember/15 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-10 -left-48 w-96 h-96 bg-amber/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- Hero Text Content -->
+          <div class="lg:col-span-6 space-y-6 text-center lg:text-right">
+            
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber/10 border border-amber/30 text-amber font-label text-label-sm">
+              <span class="material-symbols-outlined text-[16px] text-amber">verified</span>
+              <span>شواء على جمر السمر الطبيعي يومياً</span>
+            </div>
+
+            <h1 class="font-headline text-display-lg-mobile md:text-display-lg text-white font-extrabold leading-tight text-balance">
+              مذاق <span class="bg-gradient-to-l from-amber via-gold to-orange-400 bg-clip-text text-transparent">الشواء الأصيل</span> برائحة الجمر الفاخر
+            </h1>
+
+            <p class="text-dark-on-surface-container text-body-lg max-w-xl mx-auto lg:mx-0 text-pretty">
+              نختار لكم أجود قطع اللحوم البلدية الطازجة يومياً والمتبلة بخلطاتنا التراثية المتوارثة، لتتذوقوا أشهى كباب، أوصال، وريش مشوية بعناية فائقة تأسر الحواس.
+            </p>
+
+            <!-- CTA Row -->
+            <div class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-4">
+              <button 
+                type="button" 
+                onclick="openCartDrawer()" 
+                class="inline-flex items-center gap-2 px-8 py-4 rounded-md bg-gradient-to-r from-ember via-orange-500 to-amber text-charcoal font-headline text-label-lg font-black shadow-xl shadow-ember/30 hover:brightness-110 active:scale-95 transition-all cursor-pointer"
+              >
+                <span class="material-symbols-outlined text-[22px]">shopping_bag</span>
+                <span>طلب الآن</span>
+              </button>
+
+              <a 
+                href="#menu-section" 
+                class="inline-flex items-center gap-2 px-6 py-4 rounded-md bg-charcoal border border-amber/40 text-amber hover:bg-amber/10 font-headline text-label-md font-semibold transition-all"
+              >
+                <span class="material-symbols-outlined text-[20px]">menu_book</span>
+                <span>استعراض القائمة</span>
+              </a>
+            </div>
+
+            <!-- Trust / Feature Badges -->
+            <div class="pt-6 grid grid-cols-3 gap-4 border-t border-white/10 max-w-lg mx-auto lg:mx-0 text-center">
+              <div>
+                <span class="block font-headline text-headline-lg font-black text-amber tabular-nums">100%</span>
+                <span class="text-body-sm text-dark-on-surface-container font-medium">لحوم طازجة بلدي</span>
+              </div>
+              <div class="border-x border-white/10">
+                <span class="block font-headline text-headline-lg font-black text-amber tabular-nums">30+</span>
+                <span class="text-body-sm text-dark-on-surface-container font-medium">عاماً من الخبرة</span>
+              </div>
+              <div>
+                <span class="block font-headline text-headline-lg font-black text-amber tabular-nums">35 د</span>
+                <span class="text-body-sm text-dark-on-surface-container font-medium">متوسط التوصيل ساخناً</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hero Image Banner -->
+          <div class="lg:col-span-6 relative">
+            <div class="relative rounded-xl overflow-hidden border border-amber/30 shadow-2xl glow-ember group">
+              <img 
+                src="https://lh3.googleusercontent.com/aida/ALJJyrDXK11VMkHBwoFAXFx6PHr92i2yqSrtsSZrG8dl7QXx5Bk4nVk6-Bx6bwiXjOOLT8cRN9VJg3zeoPxMDvB7ZqJxkfCsQf0dvV-FKZTwJvHi1jsxd6Hd81lQuedo34axRO40uTEi_nCUciQnUB_MaFvy3wuJLQ8DCH5XYI17N0XEkQl5gLYvTNdCcIXSRVDPHhHUyzR_ngO4BGJsNTVTOKbhSErtT8YRnLJWBLqg0GF_ElcqFmP1p8j1Rv0" 
+                alt="صحن مشويات مشكلة فاخر - مشاوي الأصيل" 
+                class="w-full h-[380px] sm:h-[480px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent opacity-80"></div>
+              
+              <!-- Floating Badge on Banner -->
+              <div class="absolute bottom-6 right-6 left-6 p-4 rounded-md bg-charcoal/85 border border-amber/40 backdrop-blur-md flex items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-full bg-amber/20 border border-amber/50 flex items-center justify-center text-amber">
+                    <span class="material-symbols-outlined text-[26px]">star</span>
+                  </div>
+                  <div>
+                    <h4 class="font-headline text-headline-md text-white font-bold">صينية مشكل الأصيل الملكي</h4>
+                    <p class="text-body-sm text-dark-on-surface-container">كباب، كفتة، شيش طاووق، ريش مع الخبز والصلصات</p>
+                  </div>
+                </div>
+                <div class="text-left">
+                  <span class="block text-body-sm text-dark-on-surface-container">السعر</span>
+                  <span class="font-headline text-headline-lg font-bold text-amber tabular-nums">185 <span class="text-label-sm font-normal text-gold">ر.س</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 2. STICKY CATEGORY NAVIGATION ================= -->
+    <section class="sticky top-20 z-30 bg-charcoal/95 backdrop-blur-md border-b border-amber/20 py-3 shadow-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between gap-4">
+          
+          <!-- Category Tabs -->
+          <div role="tablist" aria-label="أقسام قائمة الطعام" class="flex items-center gap-2 overflow-x-auto scrollbar-none py-1 w-full">
+            <!-- Tab 1: Main -->
+            <button 
+              type="button" 
+              role="tab" 
+              id="tab-btn-main"
+              onclick="filterCategory('main')" 
+              data-category="main" 
+              aria-selected="true" 
+              class="cat-tab active-tab flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-ember to-amber text-charcoal font-headline text-label-md font-bold shadow-md shadow-amber/20 transition-all whitespace-nowrap cursor-pointer"
+            >
+              <span class="material-symbols-outlined text-[18px]">dinner_dining</span>
+              <span>الأطباق الرئيسية</span>
+            </button>
+
+            <!-- Tab 2: Sandwiches -->
+            <button 
+              type="button" 
+              role="tab" 
+              id="tab-btn-sandwiches"
+              onclick="filterCategory('sandwiches')" 
+              data-category="sandwiches" 
+              aria-selected="false" 
+              class="cat-tab flex items-center gap-2 px-5 py-2.5 rounded-full bg-charcoal-light text-dark-on-surface-container hover:text-white hover:bg-white/10 font-headline text-label-md font-semibold border border-white/5 transition-all whitespace-nowrap cursor-pointer"
+            >
+              <span class="material-symbols-outlined text-[18px]">lunch_dining</span>
+              <span>السندويتشات</span>
+            </button>
+
+            <!-- Tab 3: By the Kilo -->
+            <button 
+              type="button" 
+              role="tab" 
+              id="tab-btn-kilo"
+              onclick="filterCategory('kilo')" 
+              data-category="kilo" 
+              aria-selected="false" 
+              class="cat-tab flex items-center gap-2 px-5 py-2.5 rounded-full bg-charcoal-light text-dark-on-surface-container hover:text-white hover:bg-white/10 font-headline text-label-md font-semibold border border-white/5 transition-all whitespace-nowrap cursor-pointer"
+            >
+              <span class="material-symbols-outlined text-[18px]">scale</span>
+              <span>المشويات بالكيلو</span>
+            </button>
+
+            <!-- Tab 4: Appetizers & Soups -->
+            <button 
+              type="button" 
+              role="tab" 
+              id="tab-btn-appetizers"
+              onclick="filterCategory('appetizers')" 
+              data-category="appetizers" 
+              aria-selected="false" 
+              class="cat-tab flex items-center gap-2 px-5 py-2.5 rounded-full bg-charcoal-light text-dark-on-surface-container hover:text-white hover:bg-white/10 font-headline text-label-md font-semibold border border-white/5 transition-all whitespace-nowrap cursor-pointer"
+            >
+              <span class="material-symbols-outlined text-[18px]">soup_kitchen</span>
+              <span>المقبلات والشوربات</span>
+            </button>
+
+            <!-- Tab 5: Beverages -->
+            <button 
+              type="button" 
+              role="tab" 
+              id="tab-btn-beverages"
+              onclick="filterCategory('beverages')" 
+              data-category="beverages" 
+              aria-selected="false" 
+              class="cat-tab flex items-center gap-2 px-5 py-2.5 rounded-full bg-charcoal-light text-dark-on-surface-container hover:text-white hover:bg-white/10 font-headline text-label-md font-semibold border border-white/5 transition-all whitespace-nowrap cursor-pointer"
+            >
+              <span class="material-symbols-outlined text-[18px]">local_cafe</span>
+              <span>المشروبات</span>
+            </button>
+
+            <!-- Tab 6: Show All -->
+            <button 
+              type="button" 
+              role="tab" 
+              id="tab-btn-all"
+              onclick="filterCategory('all')" 
+              data-category="all" 
+              aria-selected="false" 
+              class="cat-tab flex items-center gap-2 px-5 py-2.5 rounded-full bg-charcoal-light text-dark-on-surface-container hover:text-white hover:bg-white/10 font-headline text-label-md font-semibold border border-white/5 transition-all whitespace-nowrap cursor-pointer"
+            >
+              <span class="material-symbols-outlined text-[18px]">grid_view</span>
+              <span>عرض الكل</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. MENU GRID SECTION ================= -->
+    <section id="menu-section" class="py-14 bg-charcoal">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 pb-4 border-b border-white/10 gap-4">
+          <div>
+            <div class="flex items-center gap-2 text-amber font-label text-label-sm font-semibold mb-1">
+              <span class="material-symbols-outlined text-[18px]">menu_book</span>
+              <span>قائمة الشواء الملكية</span>
+            </div>
+            <h2 id="current-category-title" class="font-headline text-headline-xl text-white font-extrabold">
+              الأطباق الرئيسية المشوية
+            </h2>
+          </div>
+          <p class="text-body-md text-dark-on-surface-container max-w-md">
+            تقدم جميع أطباق المشويات مع الخبز الطازج، الثومية، الطحينة، وسلطة البيواز بالبقدونس والسماق.
+          </p>
+        </div>
+
+        <!-- Food Cards Grid -->
+        <div id="food-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+          <!-- Card 1: Main - Kebab Halabi -->
+          <article data-category="main" data-id="item-1" data-name="كباب حلبي فاخر" data-price="68" data-image="https://lh3.googleusercontent.com/aida/ALJJyrDzBMtHRCPK-XPDCjMmyn82fx2MS3rwoBTCGpUl1Vfl2qDp4mh_LHu7r32ArQeS8203lNgnqLMB4_Zo3y8juHfWXu8R8hqYR37Kv0F7FIP3sLqjmVAzZRcVATeTSBcWnMeKII7QoFBXwK0F8uiccEsw7_MMjyoE7BWmS7GdGCYwjjmLi9KVK_ea5Dfqiie5_vfGUwfaB5Sjx5ZlTNAORh53-gk3nsnsLnslioYU4I2LfzyLsIAtmSDrCzr3" class="food-card flex flex-col justify-between rounded-md bg-charcoal-light border border-white/10 hover:border-amber/50 shadow-xl overflow-hidden group transition-all duration-300 hover:-translate-y-1.5">
+            <div class="relative overflow-hidden aspect-[4/3] bg-charcoal">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrDzBMtHRCPK-XPDCjMmyn82fx2MS3rwoBTCGpUl1Vfl2qDp4mh_LHu7r32ArQeS8203lNgnqLMB4_Zo3y8juHfWXu8R8hqYR37Kv0F7FIP3sLqjmVAzZRcVATeTSBcWnMeKII7QoFBXwK0F8uiccEsw7_MMjyoE7BWmS7GdGCYwjjmLi9KVK_ea5Dfqiie5_vfGUwfaB5Sjx5ZlTNAORh53-gk3nsnsLnslioYU4I2LfzyLsIAtmSDrCzr3" alt="كباب حلبي فاخر على الفحم" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-charcoal-light via-transparent to-transparent opacity-60"></div>
+              <span class="absolute top-3 right-3 px-3 py-1 rounded-full bg-charcoal/85 border border-amber/30 text-amber font-label text-label-sm font-bold backdrop-blur-md flex items-center gap-1">
+                <span class="material-symbols-outlined text-[14px]">local_fire_department</span>
+                الأكثر طلباً
+              </span>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h3 class="font-headline text-headline-md text-white font-bold group-hover:text-amber transition-colors">
+                    كباب حلبي فاخر
+                  </h3>
+                  <div class="text-amber font-headline text-headline-md font-bold whitespace-nowrap">
+                    <span class="tabular-nums">68</span> <span class="text-body-sm text-gold">ر.س</span>
+                  </div>
+                </div>
+                <p class="text-dark-on-surface-container text-body-sm leading-relaxed mb-4">
+                  أسياخ كباب لحم غنم نعيمي طازج مع البهارات الحلبية الأصيلة، مشوية على الفحم وتقدم مع البصل المشوي والطماطم.
+                </p>
+              </div>
+              <footer class="pt-3 border-t border-white/10 flex items-center justify-between">
+                <span class="text-body-sm text-dark-on-surface-container flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[16px] text-amber">timer</span>
+                  <span>18 دقيقة</span>
+                </span>
+                <button type="button" onclick="addToCartDirect('كباب حلبي فاخر', 68, 'https://lh3.googleusercontent.com/aida/ALJJyrDzBMtHRCPK-XPDCjMmyn82fx2MS3rwoBTCGpUl1Vfl2qDp4mh_LHu7r32ArQeS8203lNgnqLMB4_Zo3y8juHfWXu8R8hqYR37Kv0F7FIP3sLqjmVAzZRcVATeTSBcWnMeKII7QoFBXwK0F8uiccEsw7_MMjyoE7BWmS7GdGCYwjjmLi9KVK_ea5Dfqiie5_vfGUwfaB5Sjx5ZlTNAORh53-gk3nsnsLnslioYU4I2LfzyLsIAtmSDrCzr3')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-DEFAULT bg-charcoal border border-amber/40 text-amber hover:bg-amber hover:text-charcoal font-headline text-label-sm font-bold transition-all shadow-sm cursor-pointer active:scale-95">
+                  <span class="material-symbols-outlined text-[16px]">shopping_basket</span>
+                  <span>إضافة للطلب</span>
+                </button>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Card 2: Main - Kofta Khashkhash -->
+          <article data-category="main" data-id="item-2" data-name="كفتة خشخاش بالصلصة" data-price="72" data-image="https://lh3.googleusercontent.com/aida/ALJJyrC1z6N9pPJjy39MaReEXI52E36Beef6Pv12-LxDj_W02XGtBaG4TYOHCJMxLBKl8KFLgB5A1ihnOQTVnUivzk94EaRm7_sJP33pnmEzD6sCvliV3iyMMmP0fKBsNe-1yNW_KBr5mnic56T50R29Nyte8ogP1T9P9QmbAoNPISF1rBrBxpcmR5ipOspvWGepuFphlbDZu-DHiUxlyCA9HEwAQnYs544nORjPzNKp2xPt-IrZpZY8QzPnU5VB8oC_3sI" class="food-card flex flex-col justify-between rounded-md bg-charcoal-light border border-white/10 hover:border-amber/50 shadow-xl overflow-hidden group transition-all duration-300 hover:-translate-y-1.5">
+            <div class="relative overflow-hidden aspect-[4/3] bg-charcoal">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrC1z6N9pPJjy39MaReEXI52E36Beef6Pv12-LxDj_W02XGtBaG4TYOHCJMxLBKl8KFLgB5A1ihnOQTVnUivzk94EaRm7_sJP33pnmEzD6sCvliV3iyMMmP0fKBsNe-1yNW_KBr5mnic56T50R29Nyte8ogP1T9P9QmbAoNPISF1rBrBxpcmR5ipOspvWGepuFphlbDZu-DHiUxlyCA9HEwAQnYs544nORjPzNKp2xPt-IrZpZY8QzPnU5VB8oC_3sI" alt="كفتة خشخاش بالصلصة الحارة" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-charcoal-light via-transparent to-transparent opacity-60"></div>
+              <span class="absolute top-3 right-3 px-3 py-1 rounded-full bg-charcoal/85 border border-amber/30 text-amber font-label text-label-sm font-bold backdrop-blur-md flex items-center gap-1">
+                <span class="material-symbols-outlined text-[14px]">restaurant</span>
+                توصية الشيف
+              </span>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h3 class="font-headline text-headline-md text-white font-bold group-hover:text-amber transition-colors">
+                    كفتة خشخاش بالصلصة
+                  </h3>
+                  <div class="text-amber font-headline text-headline-md font-bold whitespace-nowrap">
+                    <span class="tabular-nums">72</span> <span class="text-body-sm text-gold">ر.س</span>
+                  </div>
+                </div>
+                <p class="text-dark-on-surface-container text-body-sm leading-relaxed mb-4">
+                  كفتة لحم غنم مشوية على الفحم تعلوها صلصة الطماطم المشوية المهروسة مع الثوم والفلفل الحار والصنوبر المحمص.
+                </p>
+              </div>
+              <footer class="pt-3 border-t border-white/10 flex items-center justify-between">
+                <span class="text-body-sm text-dark-on-surface-container flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[16px] text-amber">timer</span>
+                  <span>20 دقيقة</span>
+                </span>
+                <button type="button" onclick="addToCartDirect('كفتة خشخاش بالصلصة', 72, 'https://lh3.googleusercontent.com/aida/ALJJyrC1z6N9pPJjy39MaReEXI52E36Beef6Pv12-LxDj_W02XGtBaG4TYOHCJMxLBKl8KFLgB5A1ihnOQTVnUivzk94EaRm7_sJP33pnmEzD6sCvliV3iyMMmP0fKBsNe-1yNW_KBr5mnic56T50R29Nyte8ogP1T9P9QmbAoNPISF1rBrBxpcmR5ipOspvWGepuFphlbDZu-DHiUxlyCA9HEwAQnYs544nORjPzNKp2xPt-IrZpZY8QzPnU5VB8oC_3sI')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-DEFAULT bg-charcoal border border-amber/40 text-amber hover:bg-amber hover:text-charcoal font-headline text-label-sm font-bold transition-all shadow-sm cursor-pointer active:scale-95">
+                  <span class="material-symbols-outlined text-[16px]">shopping_basket</span>
+                  <span>إضافة للطلب</span>
+                </button>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Card 3: Main - Shish Taouk -->
+          <article data-category="main" data-id="item-3" data-name="شيش طاووق متبل" data-price="58" data-image="https://lh3.googleusercontent.com/aida/ALJJyrCbJaANJMCcaTasOJWmxcJR8zXayv8M_RkSiwG1wnz0yn2mImnmbjfw-GgJA_6SIuhsZjGaooJ9yFxNpbRseWuLdUW-RUxJ7p0sCVU8TQ07gO48G1Z-RxTYLh-t6falS7wQP_eOwTwGGWprufrZ0bU71poIT1hzUcv_s5yKUgJ2JIXA_QNejxBWeEGIRXbIdCoUGEGIhdUPe0o0ymlIhYG2zrXiEmDln5KD9_xE3oXFKERhULwDz64DT9cr" class="food-card flex flex-col justify-between rounded-md bg-charcoal-light border border-white/10 hover:border-amber/50 shadow-xl overflow-hidden group transition-all duration-300 hover:-translate-y-1.5">
+            <div class="relative overflow-hidden aspect-[4/3] bg-charcoal">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrCbJaANJMCcaTasOJWmxcJR8zXayv8M_RkSiwG1wnz0yn2mImnmbjfw-GgJA_6SIuhsZjGaooJ9yFxNpbRseWuLdUW-RUxJ7p0sCVU8TQ07gO48G1Z-RxTYLh-t6falS7wQP_eOwTwGGWprufrZ0bU71poIT1hzUcv_s5yKUgJ2JIXA_QNejxBWeEGIRXbIdCoUGEGIhdUPe0o0ymlIhYG2zrXiEmDln5KD9_xE3oXFKERhULwDz64DT9cr" alt="شيش طاووق دجاج مشوي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-charcoal-light via-transparent to-transparent opacity-60"></div>
+              <span class="absolute top-3 right-3 px-3 py-1 rounded-full bg-charcoal/85 border border-amber/30 text-amber font-label text-label-sm font-bold backdrop-blur-md">
+                دجاج طازج
+              </span>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h3 class="font-headline text-headline-md text-white font-bold group-hover:text-amber transition-colors">
+                    شيش طاووق متبل
+                  </h3>
+                  <div class="text-amber font-headline text-headline-md font-bold whitespace-nowrap">
+                    <span class="tabular-nums">58</span> <span class="text-body-sm text-gold">ر.س</span>
+                  </div>
+                </div>
+                <p class="text-dark-on-surface-container text-body-sm leading-relaxed mb-4">
+                  مكعبات صدر دجاج متبلة بالزبادي، الليمون، وزيت الزيتون والبهارات الخاصة، مشوية بعناية فائقة مع الثومية الشهية.
+                </p>
+              </div>
+              <footer class="pt-3 border-t border-white/10 flex items-center justify-between">
+                <span class="text-body-sm text-dark-on-surface-container flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[16px] text-amber">timer</span>
+                  <span>15 دقيقة</span>
+                </span>
+                <button type="button" onclick="addToCartDirect('شيش طاووق متبل', 58, 'https://lh3.googleusercontent.com/aida/ALJJyrCbJaANJMCcaTasOJWmxcJR8zXayv8M_RkSiwG1wnz0yn2mImnmbjfw-GgJA_6SIuhsZjGaooJ9yFxNpbRseWuLdUW-RUxJ7p0sCVU8TQ07gO48G1Z-RxTYLh-t6falS7wQP_eOwTwGGWprufrZ0bU71poIT1hzUcv_s5yKUgJ2JIXA_QNejxBWeEGIRXbIdCoUGEGIhdUPe0o0ymlIhYG2zrXiEmDln5KD9_xE3oXFKERhULwDz64DT9cr')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-DEFAULT bg-charcoal border border-amber/40 text-amber hover:bg-amber hover:text-charcoal font-headline text-label-sm font-bold transition-all shadow-sm cursor-pointer active:scale-95">
+                  <span class="material-symbols-outlined text-[16px]">shopping_basket</span>
+                  <span>إضافة للطلب</span>
+                </button>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Card 4: Main - Lamb Chops -->
+          <article data-category="main" data-id="item-4" data-name="ريش لحم غنم مشوية" data-price="94" data-image="https://lh3.googleusercontent.com/aida/ALJJyrDpRvbbe5-VTCv0_qPG-eWkXtjWkkx3zfwCoMqiuyBXYUF6mMUfupG7P5mwOKJTfZLRT-rX8xgcfJxW4Z8vj0goZUIRzN_F-VSiPcyPj7PMom4bUVLNh7hA7QArtlaSnIryz_3Vq55PQNMuAXRLml6JMxQgevjfUEnW6Ik4U0S_TtKd2vSfK_pIR-wrRnm_v5GV_HI5ZjmHWR1j8UX5WdDLffetjZRasW0pETsW46K7XqrGtE6wh3oiRA" class="food-card flex flex-col justify-between rounded-md bg-charcoal-light border border-white/10 hover:border-amber/50 shadow-xl overflow-hidden group transition-all duration-300 hover:-translate-y-1.5">
+            <div class="relative overflow-hidden aspect-[4/3] bg-charcoal">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrDpRvbbe5-VTCv0_qPG-eWkXtjWkkx3zfwCoMqiuyBXYUF6mMUfupG7P5mwOKJTfZLRT-rX8xgcfJxW4Z8vj0goZUIRzN_F-VSiPcyPj7PMom4bUVLNh7hA7QArtlaSnIryz_3Vq55PQNMuAXRLml6JMxQgevjfUEnW6Ik4U0S_TtKd2vSfK_pIR-wrRnm_v5GV_HI5ZjmHWR1j8UX5WdDLffetjZRasW0pETsW46K7XqrGtE6wh3oiRA" alt="ريش لحم غنم مشوية على الفحم" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-charcoal-light via-transparent to-transparent opacity-60"></div>
+              <span class="absolute top-3 right-3 px-3 py-1 rounded-full bg-charcoal/85 border border-amber/30 text-amber font-label text-label-sm font-bold backdrop-blur-md">
+                قطع ممتازة
+              </span>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h3 class="font-headline text-headline-md text-white font-bold group-hover:text-amber transition-colors">
+                    ريش لحم غنم مشوية
+                  </h3>
+                  <div class="text-amber font-headline text-headline-md font-bold whitespace-nowrap">
+                    <span class="tabular-nums">94</span> <span class="text-body-sm text-gold">ر.س</span>
+                  </div>
+                </div>
+                <p class="text-dark-on-surface-container text-body-sm leading-relaxed mb-4">
+                  4 قطع ريش غنم طرية متبلة بخلطة الأعشاب الجبلية والفلفل الأسود، مكرملة الحواف فوق لهب الجمر المتوهج.
+                </p>
+              </div>
+              <footer class="pt-3 border-t border-white/10 flex items-center justify-between">
+                <span class="text-body-sm text-dark-on-surface-container flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[16px] text-amber">timer</span>
+                  <span>22 دقيقة</span>
+                </span>
+                <button type="button" onclick="addToCartDirect('ريش لحم غنم مشوية', 94, 'https://lh3.googleusercontent.com/aida/ALJJyrDpRvbbe5-VTCv0_qPG-eWkXtjWkkx3zfwCoMqiuyBXYUF6mMUfupG7P5mwOKJTfZLRT-rX8xgcfJxW4Z8vj0goZUIRzN_F-VSiPcyPj7PMom4bUVLNh7hA7QArtlaSnIryz_3Vq55PQNMuAXRLml6JMxQgevjfUEnW6Ik4U0S_TtKd2vSfK_pIR-wrRnm_v5GV_HI5ZjmHWR1j8UX5WdDLffetjZRasW0pETsW46K7XqrGtE6wh3oiRA')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-DEFAULT bg-charcoal border border-amber/40 text-amber hover:bg-amber hover:text-charcoal font-headline text-label-sm font-bold transition-all shadow-sm cursor-pointer active:scale-95">
+                  <span class="material-symbols-outlined text-[16px]">shopping_basket</span>
+                  <span>إضافة للطلب</span>
+                </button>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Card 5: Sandwiches - Saj Kebab Wrap -->
+          <article data-category="sandwiches" data-id="item-5" data-name="سندويتش كباب أصيل ع الصاج" data-price="28" data-image="https://lh3.googleusercontent.com/aida/ALJJyrAdGKLSIatodEtCDiLOFV_XiglKnkZkAI1LKj4QRtNP--Nh7Fuu_Le4MENLMsBDH4uE8p4wNdgtVzK5i4_szA0nZE96HwouCPDfcD3nTVVM8SPzDSuv__5zEGl2JZFYzYg5YMEqCmb_LZZX1fB5RJHB0BnTGW0AfjRrIAS66Q24rd_hIV6rW1PLJ5vvRHFzvQAqy02HbtfoC1tePhdBC09GMV3gzJDN8KqDMyH1lzmls7dXgPZuNHWdhWkwwMvl" class="food-card flex flex-col justify-between rounded-md bg-charcoal-light border border-white/10 hover:border-amber/50 shadow-xl overflow-hidden group transition-all duration-300 hover:-translate-y-1.5">
+            <div class="relative overflow-hidden aspect-[4/3] bg-charcoal">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrAdGKLSIatodEtCDiLOFV_XiglKnkZkAI1LKj4QRtNP--Nh7Fuu_Le4MENLMsBDH4uE8p4wNdgtVzK5i4_szA0nZE96HwouCPDfcD3nTVVM8SPzDSuv__5zEGl2JZFYzYg5YMEqCmb_LZZX1fB5RJHB0BnTGW0AfjRrIAS66Q24rd_hIV6rW1PLJ5vvRHFzvQAqy02HbtfoC1tePhdBC09GMV3gzJDN8KqDMyH1lzmls7dXgPZuNHWdhWkwwMvl" alt="سندويتش كباب لحم صاج" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-charcoal-light via-transparent to-transparent opacity-60"></div>
+              <span class="absolute top-3 right-3 px-3 py-1 rounded-full bg-charcoal/85 border border-amber/30 text-amber font-label text-label-sm font-bold backdrop-blur-md">
+                خبز صاج طازج
+              </span>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h3 class="font-headline text-headline-md text-white font-bold group-hover:text-amber transition-colors">
+                    سندويتش كباب أصيل ع الصاج
+                  </h3>
+                  <div class="text-amber font-headline text-headline-md font-bold whitespace-nowrap">
+                    <span class="tabular-nums">28</span> <span class="text-body-sm text-gold">ر.س</span>
+                  </div>
+                </div>
+                <p class="text-dark-on-surface-container text-body-sm leading-relaxed mb-4">
+                  سيخين كباب لحم طازج ملفوف بخبز الصاج الرقيق مع صلصة الطحينة الملكية، بصل السماق، والمخلل المقرمش.
+                </p>
+              </div>
+              <footer class="pt-3 border-t border-white/10 flex items-center justify-between">
+                <span class="text-body-sm text-dark-on-surface-container flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[16px] text-amber">timer</span>
+                  <span>10 دقائق</span>
+                </span>
+                <button type="button" onclick="addToCartDirect('سندويتش كباب أصيل ع الصاج', 28, 'https://lh3.googleusercontent.com/aida/ALJJyrAdGKLSIatodEtCDiLOFV_XiglKnkZkAI1LKj4QRtNP--Nh7Fuu_Le4MENLMsBDH4uE8p4wNdgtVzK5i4_szA0nZE96HwouCPDfcD3nTVVM8SPzDSuv__5zEGl2JZFYzYg5YMEqCmb_LZZX1fB5RJHB0BnTGW0AfjRrIAS66Q24rd_hIV6rW1PLJ5vvRHFzvQAqy02HbtfoC1tePhdBC09GMV3gzJDN8KqDMyH1lzmls7dXgPZuNHWdhWkwwMvl')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-DEFAULT bg-charcoal border border-amber/40 text-amber hover:bg-amber hover:text-charcoal font-headline text-label-sm font-bold transition-all shadow-sm cursor-pointer active:scale-95">
+                  <span class="material-symbols-outlined text-[16px]">shopping_basket</span>
+                  <span>إضافة للطلب</span>
+                </button>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Card 6: By the Kilo - Mixed Grill Kilo -->
+          <article data-category="kilo" data-id="item-6" data-name="مشويات مشكلة (1 كيلو)" data-price="240" data-image="https://lh3.googleusercontent.com/aida/ALJJyrC79NVPbSHJPwAEw49zX3LnwvYRJf2vLOf7u9TazR3HSLL_YYGnKldw8I4CegMSILDffCR65aydhA7_YHIDJvXUP4lHjef67qXY1s3WUc4ia1oJ9wyEyhP1aEYzvtLsyfWnnrpvdtxpQyWHUkQDChkNdbW0z4zygEg4Jhvqs57gFV0nd-XZ5-ZQjLW0OKEuPcBJ0V5Z34fNcMreciC6PBohqLeUsyT5Q8Ba28ZkpuM8M9FP5k-ZSfEeFCXRoR8" class="food-card flex flex-col justify-between rounded-md bg-charcoal-light border border-white/10 hover:border-amber/50 shadow-xl overflow-hidden group transition-all duration-300 hover:-translate-y-1.5">
+            <div class="relative overflow-hidden aspect-[4/3] bg-charcoal">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrC79NVPbSHJPwAEw49zX3LnwvYRJf2vLOf7u9TazR3HSLL_YYGnKldw8I4CegMSILDffCR65aydhA7_YHIDJvXUP4lHjef67qXY1s3WUc4ia1oJ9wyEyhP1aEYzvtLsyfWnnrpvdtxpQyWHUkQDChkNdbW0z4zygEg4Jhvqs57gFV0nd-XZ5-ZQjLW0OKEuPcBJ0V5Z34fNcMreciC6PBohqLeUsyT5Q8Ba28ZkpuM8M9FP5k-ZSfEeFCXRoR8" alt="مشويات مشكلة بالكيلو عائلي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-charcoal-light via-transparent to-transparent opacity-60"></div>
+              <span class="absolute top-3 right-3 px-3 py-1 rounded-full bg-charcoal/85 border border-amber/30 text-amber font-label text-label-sm font-bold backdrop-blur-md">
+                وليمة عائلية تكفي 4-5
+              </span>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h3 class="font-headline text-headline-md text-white font-bold group-hover:text-amber transition-colors">
+                    مشويات مشكلة (1 كيلو)
+                  </h3>
+                  <div class="text-amber font-headline text-headline-md font-bold whitespace-nowrap">
+                    <span class="tabular-nums">240</span> <span class="text-body-sm text-gold">ر.س</span>
+                  </div>
+                </div>
+                <p class="text-dark-on-surface-container text-body-sm leading-relaxed mb-4">
+                  تشكيلة غنية: 4 أسياخ كباب نعيمي، 4 أسياخ كفتة، 4 أسياخ أوصال لحم، 4 أسياخ شيش طاووق مع الأرز والصلصات الكاملة.
+                </p>
+              </div>
+              <footer class="pt-3 border-t border-white/10 flex items-center justify-between">
+                <span class="text-body-sm text-dark-on-surface-container flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[16px] text-amber">timer</span>
+                  <span>25 دقيقة</span>
+                </span>
+                <button type="button" onclick="addToCartDirect('مشويات مشكلة (1 كيلو)', 240, 'https://lh3.googleusercontent.com/aida/ALJJyrC79NVPbSHJPwAEw49zX3LnwvYRJf2vLOf7u9TazR3HSLL_YYGnKldw8I4CegMSILDffCR65aydhA7_YHIDJvXUP4lHjef67qXY1s3WUc4ia1oJ9wyEyhP1aEYzvtLsyfWnnrpvdtxpQyWHUkQDChkNdbW0z4zygEg4Jhvqs57gFV0nd-XZ5-ZQjLW0OKEuPcBJ0V5Z34fNcMreciC6PBohqLeUsyT5Q8Ba28ZkpuM8M9FP5k-ZSfEeFCXRoR8')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-DEFAULT bg-charcoal border border-amber/40 text-amber hover:bg-amber hover:text-charcoal font-headline text-label-sm font-bold transition-all shadow-sm cursor-pointer active:scale-95">
+                  <span class="material-symbols-outlined text-[16px]">shopping_basket</span>
+                  <span>إضافة للطلب</span>
+                </button>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Card 7: Appetizers - Hummus with Meat -->
+          <article data-category="appetizers" data-id="item-7" data-name="حمص باللحمة والصنوبر" data-price="36" data-image="https://lh3.googleusercontent.com/aida/ALJJyrDniAdH6sXNiFRXAqroT_icUyYcpsEZxRzWVwEbQDRpmvqYnyCvo-p-4bla2dDdtJv582P4ks2v4JLZqiLfNaQlSTdVSNOFNfAKUTalXNy0XVkZ-OIl0UgOOenAR6yCxl8M1UHdPrTLLrlpLxGVy1GI-Ny51M4XamJLnfsRFZpo_yi1je_bLIYj9l7RbKmoWxhXl14cWJtyBNRyWLeoCvmdminnswifwXP5B4hq_ItvFnIOuxaPMsVeL4k" class="food-card flex flex-col justify-between rounded-md bg-charcoal-light border border-white/10 hover:border-amber/50 shadow-xl overflow-hidden group transition-all duration-300 hover:-translate-y-1.5">
+            <div class="relative overflow-hidden aspect-[4/3] bg-charcoal">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrDniAdH6sXNiFRXAqroT_icUyYcpsEZxRzWVwEbQDRpmvqYnyCvo-p-4bla2dDdtJv582P4ks2v4JLZqiLfNaQlSTdVSNOFNfAKUTalXNy0XVkZ-OIl0UgOOenAR6yCxl8M1UHdPrTLLrlpLxGVy1GI-Ny51M4XamJLnfsRFZpo_yi1je_bLIYj9l7RbKmoWxhXl14cWJtyBNRyWLeoCvmdminnswifwXP5B4hq_ItvFnIOuxaPMsVeL4k" alt="حمص باللحمة المفرومة والصنوبر" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-charcoal-light via-transparent to-transparent opacity-60"></div>
+              <span class="absolute top-3 right-3 px-3 py-1 rounded-full bg-charcoal/85 border border-amber/30 text-amber font-label text-label-sm font-bold backdrop-blur-md">
+                مقبلات ساخنة
+              </span>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h3 class="font-headline text-headline-md text-white font-bold group-hover:text-amber transition-colors">
+                    حمص باللحمة والصنوبر
+                  </h3>
+                  <div class="text-amber font-headline text-headline-md font-bold whitespace-nowrap">
+                    <span class="tabular-nums">36</span> <span class="text-body-sm text-gold">ر.س</span>
+                  </div>
+                </div>
+                <p class="text-dark-on-surface-container text-body-sm leading-relaxed mb-4">
+                  حمص ناعم بزيت الزيتون البكر الممتاز، تعلوه قطع لحم الغنم المحمرة بالسمن البلدي ورشة صنوبر ذهبي محمص.
+                </p>
+              </div>
+              <footer class="pt-3 border-t border-white/10 flex items-center justify-between">
+                <span class="text-body-sm text-dark-on-surface-container flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[16px] text-amber">timer</span>
+                  <span>8 دقائق</span>
+                </span>
+                <button type="button" onclick="addToCartDirect('حمص باللحمة والصنوبر', 36, 'https://lh3.googleusercontent.com/aida/ALJJyrDniAdH6sXNiFRXAqroT_icUyYcpsEZxRzWVwEbQDRpmvqYnyCvo-p-4bla2dDdtJv582P4ks2v4JLZqiLfNaQlSTdVSNOFNfAKUTalXNy0XVkZ-OIl0UgOOenAR6yCxl8M1UHdPrTLLrlpLxGVy1GI-Ny51M4XamJLnfsRFZpo_yi1je_bLIYj9l7RbKmoWxhXl14cWJtyBNRyWLeoCvmdminnswifwXP5B4hq_ItvFnIOuxaPMsVeL4k')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-DEFAULT bg-charcoal border border-amber/40 text-amber hover:bg-amber hover:text-charcoal font-headline text-label-sm font-bold transition-all shadow-sm cursor-pointer active:scale-95">
+                  <span class="material-symbols-outlined text-[16px]">shopping_basket</span>
+                  <span>إضافة للطلب</span>
+                </button>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Card 8: Beverages - Pomegranate Cooler -->
+          <article data-category="beverages" data-id="item-8" data-name="موخيتو الرمان الطبيعي" data-price="22" data-image="https://lh3.googleusercontent.com/aida/ALJJyrBOdyy-tctjnBFNZ6MikVWm9d1c90T2vfi1pVLhHuMzi3lK4OG6sTUoZLPIUGy9W_07eAfRDrnHc8eNoWUPZ6hW1-OmzRJso5gKcRjTYTblCIY7FtGbVGFwqhsYBd2bN2Wc1BjzzBaMrmbvsoVipzRZ59yyuqU-1grwSVyg6ARuXt6BL77cAhrnJgOKSVx05_MA7U72-EKYhq2AQ1-OgKvHxIWmo6YT-0fSmuzOBDqoT9MG5HqYRPyqVVLpsCI2Np7M9bE2" class="food-card flex flex-col justify-between rounded-md bg-charcoal-light border border-white/10 hover:border-amber/50 shadow-xl overflow-hidden group transition-all duration-300 hover:-translate-y-1.5">
+            <div class="relative overflow-hidden aspect-[4/3] bg-charcoal">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrBOdyy-tctjnBFNZ6MikVWm9d1c90T2vfi1pVLhHuMzi3lK4OG6sTUoZLPIUGy9W_07eAfRDrnHc8eNoWUPZ6hW1-OmzRJso5gKcRjTYTblCIY7FtGbVGFwqhsYBd2bN2Wc1BjzzBaMrmbvsoVipzRZ59yyuqU-1grwSVyg6ARuXt6BL77cAhrnJgOKSVx05_MA7U72-EKYhq2AQ1-OgKvHxIWmo6YT-0fSmuzOBDqoT9MG5HqYRPyqVVLpsCI2Np7M9bE2" alt="عصير رمان فوار منعش" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-charcoal-light via-transparent to-transparent opacity-60"></div>
+              <span class="absolute top-3 right-3 px-3 py-1 rounded-full bg-charcoal/85 border border-amber/30 text-amber font-label text-label-sm font-bold backdrop-blur-md">
+                منعش مع المشاوي
+              </span>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h3 class="font-headline text-headline-md text-white font-bold group-hover:text-amber transition-colors">
+                    موخيتو الرمان الطبيعي
+                  </h3>
+                  <div class="text-amber font-headline text-headline-md font-bold whitespace-nowrap">
+                    <span class="tabular-nums">22</span> <span class="text-body-sm text-gold">ر.س</span>
+                  </div>
+                </div>
+                <p class="text-dark-on-surface-container text-body-sm leading-relaxed mb-4">
+                  عصير رمان طبيعي مثلج مع أوراق النعناع الطازجة، شرائح الليمون وماء فوار يروي العطش ويكمل نكهة الشواء.
+                </p>
+              </div>
+              <footer class="pt-3 border-t border-white/10 flex items-center justify-between">
+                <span class="text-body-sm text-dark-on-surface-container flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[16px] text-amber">timer</span>
+                  <span>5 دقائق</span>
+                </span>
+                <button type="button" onclick="addToCartDirect('موخيتو الرمان الطبيعي', 22, 'https://lh3.googleusercontent.com/aida/ALJJyrBOdyy-tctjnBFNZ6MikVWm9d1c90T2vfi1pVLhHuMzi3lK4OG6sTUoZLPIUGy9W_07eAfRDrnHc8eNoWUPZ6hW1-OmzRJso5gKcRjTYTblCIY7FtGbVGFwqhsYBd2bN2Wc1BjzzBaMrmbvsoVipzRZ59yyuqU-1grwSVyg6ARuXt6BL77cAhrnJgOKSVx05_MA7U72-EKYhq2AQ1-OgKvHxIWmo6YT-0fSmuzOBDqoT9MG5HqYRPyqVVLpsCI2Np7M9bE2')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-DEFAULT bg-charcoal border border-amber/40 text-amber hover:bg-amber hover:text-charcoal font-headline text-label-sm font-bold transition-all shadow-sm cursor-pointer active:scale-95">
+                  <span class="material-symbols-outlined text-[16px]">shopping_basket</span>
+                  <span>إضافة للطلب</span>
+                </button>
+              </footer>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= 4. STORY / ABOUT GRILL SECTION ================= -->
+    <section id="about-grill" class="py-16 bg-charcoal-light border-y border-white/5 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <div class="p-8 rounded-lg bg-charcoal border border-white/5 hover:border-amber/30 transition-all">
+            <div class="w-14 h-14 rounded-md bg-amber/10 border border-amber/30 flex items-center justify-center text-amber mb-6">
+              <span class="material-symbols-outlined text-[32px]">workspace_premium</span>
+            </div>
+            <h3 class="font-headline text-headline-md text-white font-bold mb-3">لحوم طازجة 100% يومياً</h3>
+            <p class="text-body-md text-dark-on-surface-container leading-relaxed">
+              لا نستخدم اللحوم المجمدة مطلقاً. ذبائح نعيمي وعجول بلدية طازجة تذبح صباحاً وتصل مطبخنا لتفرم وتتبل مباشرة.
+            </p>
+          </div>
+
+          <div class="p-8 rounded-lg bg-charcoal border border-white/5 hover:border-amber/30 transition-all">
+            <div class="w-14 h-14 rounded-md bg-amber/10 border border-amber/30 flex items-center justify-center text-amber mb-6">
+              <span class="material-symbols-outlined text-[32px]">fireplace</span>
+            </div>
+            <h3 class="font-headline text-headline-md text-white font-bold mb-3">شواء فحم السمر الطبيعي</h3>
+            <p class="text-body-md text-dark-on-surface-container leading-relaxed">
+              نحافظ على تقاليد الشواء الأصيلة على جمر السمر النقي الخالي من المواد الكيميائية، لمنح اللحوم تلك النكهة الدخانية العميقة.
+            </p>
+          </div>
+
+          <div class="p-8 rounded-lg bg-charcoal border border-white/5 hover:border-amber/30 transition-all">
+            <div class="w-14 h-14 rounded-md bg-amber/10 border border-amber/30 flex items-center justify-center text-amber mb-6">
+              <span class="material-symbols-outlined text-[32px]">moped</span>
+            </div>
+            <h3 class="font-headline text-headline-md text-white font-bold mb-3">توصيل حراري فائق السرعة</h3>
+            <p class="text-body-md text-dark-on-surface-container leading-relaxed">
+              حقائب توصيل حرارية مخصصة تضمن وصول المشويات إلى مائدتكم بنفس درجة حرارتها وقرمشة أطرافها وكأنها خرجت للتو من المنقل.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= 5. FOOTER ================= -->
+  <footer id="footer" class="bg-charcoal border-t border-white/10 pt-16 pb-8 text-dark-on-surface-container">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+        
+        <!-- Column 1: Brand & Bio -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-ember to-amber flex items-center justify-center text-charcoal">
+              <span class="material-symbols-outlined text-[24px]">outdoor_grill</span>
+            </div>
+            <span class="font-headline text-headline-lg font-black text-white">
+              مشاوي <span class="text-amber">الأصيل</span>
+            </span>
+          </div>
+          <p class="text-body-sm leading-relaxed">
+            مطعم ومشاوي راقية تقدم فنون الشواء الشرقي الأصيل بأعلى معايير الجودة والضيافة العربية الفاخرة.
+          </p>
+          <!-- Social Icons -->
+          <div class="flex items-center gap-3 pt-2">
+            <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full bg-charcoal-light border border-white/10 text-white hover:text-amber hover:border-amber/50 flex items-center justify-center transition-colors">
+              <span class="material-symbols-outlined text-[18px]">photo_camera</span>
+            </a>
+            <a href="#" aria-label="X / Twitter" class="w-9 h-9 rounded-full bg-charcoal-light border border-white/10 text-white hover:text-amber hover:border-amber/50 flex items-center justify-center transition-colors">
+              <span class="material-symbols-outlined text-[18px]">alternate_email</span>
+            </a>
+            <a href="#" aria-label="TikTok" class="w-9 h-9 rounded-full bg-charcoal-light border border-white/10 text-white hover:text-amber hover:border-amber/50 flex items-center justify-center transition-colors">
+              <span class="material-symbols-outlined text-[18px]">videocam</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Working Hours -->
+        <div class="space-y-3">
+          <h4 class="font-headline text-headline-md text-white font-bold flex items-center gap-2">
+            <span class="material-symbols-outlined text-amber text-[20px]">schedule</span>
+            ساعات العمل
+          </h4>
+          <ul class="text-body-sm space-y-2.5">
+            <li class="flex justify-between items-center">
+              <span>السبت - الأربعاء:</span>
+              <span class="text-white font-medium tabular-nums">12:30 م – 01:30 ص</span>
+            </li>
+            <li class="flex justify-between items-center">
+              <span>الخميس:</span>
+              <span class="text-white font-medium tabular-nums">12:30 م – 02:30 ص</span>
+            </li>
+            <li class="flex justify-between items-center">
+              <span>الجمعة:</span>
+              <span class="text-white font-medium tabular-nums">01:00 م – 02:30 ص</span>
+            </li>
+            <li class="pt-2 text-amber text-label-sm font-semibold flex items-center gap-1">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              خدمة التوصيل مستمرة حتى آخر الليل
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact & Branches -->
+        <div class="space-y-3">
+          <h4 class="font-headline text-headline-md text-white font-bold flex items-center gap-2">
+            <span class="material-symbols-outlined text-amber text-[20px]">pin_drop</span>
+            الفروع والتواصل
+          </h4>
+          <ul class="text-body-sm space-y-2.5">
+            <li class="flex items-start gap-2">
+              <span class="material-symbols-outlined text-[18px] text-amber mt-0.5">location_on</span>
+              <span>الفرع الرئيسي: طريق الملك فهد، حي العليا، الرياض</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="material-symbols-outlined text-[18px] text-amber mt-0.5">location_on</span>
+              <span>فرع الشمال: طريق أنس بن مالك، حي الملقا</span>
+            </li>
+            <li class="flex items-center gap-2 pt-1">
+              <span class="material-symbols-outlined text-[18px] text-amber">call</span>
+              <a href="tel:920002828" class="text-white hover:text-amber font-bold font-headline tabular-nums">9200 02828</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Newsletter (Firebase Connected) -->
+        <div class="space-y-3">
+          <h4 class="font-headline text-headline-md text-white font-bold flex items-center gap-2">
+            <span class="material-symbols-outlined text-amber text-[20px]">notifications_active</span>
+            عروض الشواء الحصرية
+          </h4>
+          <p class="text-body-sm">
+            اشترك في نشرتنا لتصلك كوبونات الخصم وعروض الولائم الخاصة أولاً بأول.
+          </p>
+          <form id="newsletter-form" class="space-y-2">
+            <div class="relative">
+              <input 
+                id="newsletter-input"
+                type="text" 
+                placeholder="رقم الجوال أو البريد الإلكتروني" 
+                class="w-full px-4 py-2.5 rounded-DEFAULT bg-charcoal-light border border-white/10 text-white placeholder-zinc-500 text-body-sm focus:outline-none focus:border-amber font-body" 
+                required
+              />
+            </div>
+            <button 
+              type="submit" 
+              class="w-full py-2.5 rounded-DEFAULT bg-amber text-charcoal font-headline text-label-md font-bold hover:brightness-110 active:scale-95 transition-all cursor-pointer"
+            >
+              تأكيد الاشتراك
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-body-sm text-zinc-500 gap-4">
+        <p>© 2026 مطاعم مشاوي الأصيل. جميع الحقوق محفوظة.</p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-amber transition-colors">سياسة الخصوصية</a>
+          <a href="#" class="hover:text-amber transition-colors">الشروط والأحكام</a>
+          <a href="#" class="hover:text-amber transition-colors">شهادة الجودة وسلامة الغذاء</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= 6. CART SLIDE-OVER DRAWER ================= -->
+  <div id="cart-overlay" class="drawer-backdrop hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm transition-opacity">
+    <div 
+      id="cart-drawer-panel" 
+      class="drawer-panel drawer-panel-right fixed inset-y-0 right-0 w-full max-w-md bg-charcoal-light border-l border-white/10 shadow-2xl flex flex-col justify-between z-50 text-white overflow-hidden"
+    >
+      
+      <!-- Drawer Header -->
+      <div class="p-5 border-b border-white/10 flex items-center justify-between bg-charcoal">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-amber/10 border border-amber/30 text-amber flex items-center justify-center">
+            <span class="material-symbols-outlined text-[22px]">shopping_cart</span>
+          </div>
+          <div>
+            <h3 class="font-headline text-headline-md font-bold text-white">سلة الطلبات</h3>
+            <span class="text-body-sm text-gold">مشاوي الأصيل الفاخرة</span>
+          </div>
+        </div>
+        <button 
+          id="cart-drawer-close" 
+          type="button" 
+          onclick="closeCartDrawer()"
+          class="p-2 rounded-full text-zinc-400 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
+          aria-label="إغلاق السلة"
+        >
+          <span class="material-symbols-outlined text-[24px]">close</span>
+        </button>
+      </div>
+
+      <!-- Drawer Body: Items List or Empty State -->
+      <div class="flex-1 overflow-y-auto p-5 space-y-4">
+        
+        <!-- Empty Cart State -->
+        <div id="cart-empty-state" class="py-16 text-center space-y-4">
+          <div class="w-20 h-20 mx-auto rounded-full bg-charcoal border border-white/10 text-zinc-500 flex items-center justify-center">
+            <span class="material-symbols-outlined text-[40px]">remove_shopping_cart</span>
+          </div>
+          <div>
+            <h4 class="font-headline text-headline-md text-white font-bold">سلتك فارغة حالياً</h4>
+            <p class="text-body-sm text-dark-on-surface-container mt-1">
+              تصفح القائمة الآن وأضف أشهى المشويات الطازجة على الفحم!
+            </p>
+          </div>
+          <button 
+            id="continue-shopping-btn" 
+            type="button" 
+            onclick="closeCartDrawer()"
+            class="px-6 py-2.5 rounded-DEFAULT bg-amber text-charcoal font-headline text-label-md font-bold hover:brightness-110 transition-all cursor-pointer"
+          >
+            استعراض القائمة
+          </button>
+        </div>
+
+        <!-- Populated Cart Items -->
+        <div id="cart-drawer-items" class="space-y-3"></div>
+
+      </div>
+
+      <!-- Drawer Footer & Checkout Form -->
+      <div id="cart-checkout-section" class="hidden p-5 border-t border-white/10 bg-charcoal space-y-4">
+        
+        <!-- Price Summary -->
+        <div class="space-y-2 pb-3 border-b border-white/10 text-body-sm">
+          <div class="flex justify-between text-dark-on-surface-container">
+            <span>المجموع الفرعي:</span>
+            <span id="cart-subtotal" class="font-bold text-white tabular-nums">0 ر.س</span>
+          </div>
+          <div class="flex justify-between text-dark-on-surface-container">
+            <span>التوصيل:</span>
+            <span class="text-emerald-400 font-bold">مجاني (عرض خاص)</span>
+          </div>
+          <div class="flex justify-between font-headline text-headline-md text-white font-bold pt-1">
+            <span>الإجمالي الكلي:</span>
+            <span id="cart-total" class="text-amber tabular-nums">0 ر.س</span>
+          </div>
+        </div>
+
+        <!-- Customer Details Form (Saves to Firebase) -->
+        <form id="checkout-form" class="space-y-3">
+          <div>
+            <label class="block text-label-sm text-zinc-300 font-semibold mb-1">الاسم الكريم:</label>
+            <input 
+              type="text" 
+              name="customer-name" 
+              required 
+              placeholder="مثال: محمد عبدالله" 
+              class="w-full px-3.5 py-2 rounded-DEFAULT bg-charcoal-light border border-white/10 text-white placeholder-zinc-500 text-body-sm focus:border-amber focus:outline-none"
+            />
+          </div>
+
+          <div>
+            <label class="block text-label-sm text-zinc-300 font-semibold mb-1">رقم الجوال للتوصيل:</label>
+            <input 
+              type="tel" 
+              name="customer-phone" 
+              required 
+              placeholder="05XXXXXXXX" 
+              class="w-full px-3.5 py-2 rounded-DEFAULT bg-charcoal-light border border-white/10 text-white placeholder-zinc-500 text-body-sm focus:border-amber focus:outline-none"
+            />
+          </div>
+
+          <div>
+            <label class="block text-label-sm text-zinc-300 font-semibold mb-1">عنوان التوصيل:</label>
+            <input 
+              type="text" 
+              name="customer-address" 
+              required 
+              placeholder="المدينة، الحي، اسم الشارع ورقم المبنى" 
+              class="w-full px-3.5 py-2 rounded-DEFAULT bg-charcoal-light border border-white/10 text-white placeholder-zinc-500 text-body-sm focus:border-amber focus:outline-none"
+            />
+          </div>
+
+          <div>
+            <label class="block text-label-sm text-zinc-300 font-semibold mb-1">ملاحظات على الطلب (اختياري):</label>
+            <input 
+              type="text" 
+              name="customer-notes" 
+              placeholder="درجة الاستواء، بهارات إضافية، إلخ..." 
+              class="w-full px-3.5 py-2 rounded-DEFAULT bg-charcoal-light border border-white/10 text-white placeholder-zinc-500 text-body-sm focus:border-amber focus:outline-none"
+            />
+          </div>
+
+          <!-- Checkout Submit Button -->
+          <button 
+            id="checkout-submit-btn" 
+            type="submit" 
+            class="w-full py-3.5 rounded-DEFAULT bg-gradient-to-r from-ember to-amber text-charcoal font-headline text-label-md font-extrabold shadow-lg shadow-ember/30 hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-2 cursor-pointer"
+          >
+            <span class="material-symbols-outlined text-[20px]">check_circle</span>
+            <span>تأكيد وإرسال الطلب</span>
+          </button>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= 7. ORDER SUCCESS MODAL ================= -->
+  <div id="order-success-modal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="w-full max-w-md bg-charcoal-light border border-amber/40 rounded-xl p-6 text-center space-y-5 glow-amber shadow-2xl relative">
+      
+      <!-- Success Icon -->
+      <div class="w-20 h-20 mx-auto rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 flex items-center justify-center animate-bounce">
+        <span class="material-symbols-outlined text-[48px]">check_circle</span>
+      </div>
+
+      <!-- Header & Message -->
+      <div>
+        <h3 class="font-headline text-headline-xl text-white font-black">تم استلام طلبك بنجاح!</h3>
+        <p class="text-body-md text-dark-on-surface-container mt-2">
+          تم إرسال طلبك وحفظه مباشرة في قاعدة بيانات المطعم (Firebase). المشاوي في طريقها للتجهيز على الجمر!
+        </p>
+      </div>
+
+      <!-- Order ID Card -->
+      <div class="p-3.5 rounded-DEFAULT bg-charcoal border border-white/10 flex items-center justify-between">
+        <span class="text-body-sm text-zinc-400">رقم الطلب (Order ID):</span>
+        <span id="success-order-id" class="font-headline text-label-md text-amber font-mono font-bold">#ORD-000000</span>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="space-y-2 pt-2">
+        <a 
+          id="whatsapp-order-btn" 
+          href="#" 
+          target="_blank" 
+          class="w-full py-3 rounded-DEFAULT bg-emerald-600 hover:bg-emerald-500 text-white font-headline text-label-md font-bold flex items-center justify-center gap-2 transition-all shadow-md"
+        >
+          <span class="material-symbols-outlined text-[20px]">chat</span>
+          <span>متابعة الطلب عبر واتساب</span>
+        </a>
+
+        <button 
+          id="modal-close-btn" 
+          type="button" 
+          onclick="closeSuccessModal()"
+          class="w-full py-2.5 rounded-DEFAULT bg-charcoal hover:bg-white/5 border border-white/10 text-white font-headline text-label-sm font-semibold transition-all cursor-pointer"
+        >
+          العودة للقائمة
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= 8. TOAST NOTIFICATION ================= -->
+  <div id="cart-toast" class="fixed bottom-6 left-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
+    <div class="px-5 py-3 rounded-md bg-charcoal-light border border-amber/50 shadow-2xl text-white flex items-center gap-3">
+      <div class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+        <span class="material-symbols-outlined text-[20px]">check_circle</span>
+      </div>
+      <div>
+        <p id="toast-title" class="font-headline text-label-md font-bold text-amber">تمت الإضافة للسلة!</p>
+        <p id="toast-desc" class="text-body-sm text-dark-on-surface-container">تمت إضافة الصنف إلى طلبك بنجاح</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= 9. CORE SCRIPTS (Works directly offline & online) ================= -->
+  <script>
+    // Universal Category Filter (Works immediately in both offline file:// and online)
+    const categoryTitles = {
+      'main': 'الأطباق الرئيسية المشوية',
+      'sandwiches': 'السندويتشات ولفائف الصاج',
+      'kilo': 'المشويات والولائم بالكيلو',
+      'appetizers': 'المقبلات والشوربات',
+      'beverages': 'المشروبات والعصائر الطبيعية',
+      'all': 'جميع أصناف القائمة'
+    };
+
+    function filterCategory(category) {
+      // 1. Update Tabs
+      const tabs = document.querySelectorAll('.cat-tab');
+      tabs.forEach(tab => {
+        tab.classList.remove('active-tab', 'bg-gradient-to-r', 'from-ember', 'to-amber', 'text-charcoal');
+        tab.classList.add('bg-charcoal-light', 'text-dark-on-surface-container');
+        tab.setAttribute('aria-selected', 'false');
+      });
+
+      const selectedTab = document.getElementById('tab-btn-' + category);
+      if (selectedTab) {
+        selectedTab.classList.remove('bg-charcoal-light', 'text-dark-on-surface-container');
+        selectedTab.classList.add('active-tab', 'bg-gradient-to-r', 'from-ember', 'to-amber', 'text-charcoal');
+        selectedTab.setAttribute('aria-selected', 'true');
+      }
+
+      // 2. Update Title
+      const titleEl = document.getElementById('current-category-title');
+      if (titleEl && categoryTitles[category]) {
+        titleEl.textContent = categoryTitles[category];
+      }
+
+      // 3. Filter Cards
+      const cards = document.querySelectorAll('.food-card');
+      cards.forEach(card => {
+        const itemCat = card.getAttribute('data-category');
+        if (category === 'all' || itemCat === category) {
+          card.classList.remove('hidden');
+          card.classList.add('flex');
+        } else {
+          card.classList.add('hidden');
+          card.classList.remove('flex');
+        }
+      });
+    }
+
+    // Direct Add To Cart helper (accessible directly by buttons)
+    function addToCartDirect(name, price, image) {
+      if (window.appAddToCart) {
+        window.appAddToCart(name, price, image);
+      } else {
+        // Fallback cart state if modules haven't finished loading
+        let cart = JSON.parse(localStorage.getItem('mashawi_cart') || '[]');
+        const existing = cart.find(i => i.name === name);
+        if (existing) {
+          existing.quantity += 1;
+        } else {
+          cart.push({ id: 'item-' + Date.now(), name, price, image, quantity: 1 });
+        }
+        localStorage.setItem('mashawi_cart', JSON.stringify(cart));
+        
+        // Update badge
+        const total = cart.reduce((s, i) => s + i.quantity, 0);
+        const counter = document.getElementById('cart-counter');
+        if (counter) counter.textContent = total;
+
+        // Toast
+        const toast = document.getElementById('cart-toast');
+        const desc = document.getElementById('toast-desc');
+        if (desc) desc.textContent = 'تمت إضافة "' + name + '" إلى طلبك بنجاح';
+        if (toast) {
+          toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+          setTimeout(() => toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none'), 2400);
+        }
+      }
+    }
+  </script>
+
+  <!-- ================= 10. JAVASCRIPT MODULE (Firebase + Drawer Logic) ================= -->
+  <script type="module" src="js/app.js"></script>
+
+</body>
+</html>
